@@ -1,0 +1,29 @@
+Question,Intent
+ How do I reset my Windows password?,password
+ VPN connection is failing with error code 619. What should I do?,network
+ How can I install Microsoft Office on my laptop?,application
+ I forgot my email login. How can I recover it?,email
+ Why is my internet so slow in the office?,network
+ Steps to install printer drivers on Windows 10.,device
+ How do I access the internal HR portal remotely?,internet
+ What to do if my laptop is overheating?,device
+ How to configure Outlook for company email?,email
+ I'm getting 'access denied' when trying to open a shared folder.,application
+ How to update antivirus software on Mac?,application
+ Troubleshooting guide for Bluetooth not working on Windows.,device
+ Instructions to connect to a network drive.,network
+ What does 'no bootable device found' mean and how to fix it?,device
+ How do I check my IP address in Linux?,network
+ Procedure to request new software installation.,application
+ How can I connect to the company Wi-Fi?,network
+ How to fix 'disk full' error on Windows?,application
+ My mouse/keyboard stopped working. What can I try?,device
+ I keep getting a 'certificate expired' message on the browser.,network
+ How to clear browser cache and cookies?,application
+ Laptop battery draining too fast . tips to improve it?,device
+ Can't open Zoom. app crashes immediately.,application
+ How to whitelist a website in the firewall settings?,network
+ Windows stuck on 'Preparing Windows' screen.,application
+ How to enable two-factor authentication for email account?,email
+I cannot login to my windows,password
+Printer paper Jammed. How to fix?,hardware

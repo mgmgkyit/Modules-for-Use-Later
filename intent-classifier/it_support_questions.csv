@@ -1,0 +1,101 @@
+Question,Intent
+How can I reset my forgotten password?,password
+Why does my password keep getting rejected even though it's correct?,password
+I'm locked out of my account after too many failed login attempts — what should I do?,password
+How do I change my current password?,password
+Can I reuse my previous passwords?,password
+What should I do if I suspect my password was compromised?,password
+How often should I change my password?,password
+Why is my temporary password not working?,password
+How do I set a strong and secure password?,password
+Why does my system keep asking me to change my password?,password
+"I updated my password, but I can't log in on my mobile device — why?",password
+What happens if I forget the answers to my security questions?,password
+Is there a way to recover my password without resetting it?,password
+Why do I keep getting password expiration warnings?,password
+Can I use a password manager to store my work credentials?,password
+Why can’t I connect to the company network?,network
+How do I map a network drive?,network
+Why is my VPN connection unstable?,network
+I keep losing connection to shared network folders — why?,network
+How do I connect to the office Wi-Fi?,network
+What should I do if I see “No Network Access”?,network
+Why is my network connection so slow?,network
+How do I check my IP address?,network
+Why can't I print to the network printer?,network
+How do I access a network resource remotely?,network
+Why is my remote desktop connection not working?,network
+Can I connect to the network from a personal device?,network
+What does “Limited Connectivity” mean?,network
+How do I flush my DNS cache?,network
+How do I know if the firewall is blocking my network access?,network
+Why won’t the application open?,application
+I keep getting an error message when I launch the app — what should I do?,application
+How do I update my software?,application
+Can I reinstall the app without losing my data?,application
+Why is the application freezing frequently?,application
+How do I request access to a restricted application?,application
+What should I do if the application crashes at startup?,application
+I can’t save my work in the app — what could be wrong?,application
+How do I uninstall an app properly?,application
+Why is my app running slowly?,application
+How can I check for app compatibility with my OS?,application
+My application license has expired — how do I renew it?,application
+How do I clear the app’s cache or temporary files?,application
+The app is not syncing data — what’s the fix?,application
+Why does the app require admin privileges?,application
+Why am I not receiving any emails?,email
+I can’t send emails — what should I check?,email
+How do I set up my email on Outlook?,email
+Why is my email stuck in the outbox?,email
+How do I recover deleted emails?,email
+My email account was hacked — what should I do?,email
+I keep getting bounce-back errors when sending — why?,email
+How do I create a signature in my email?,email
+Why are emails going to my spam folder?,email
+How do I access my email from my phone?,email
+How do I add a shared mailbox?,email
+Can I recall a sent email?,email
+How do I archive emails?,email
+How do I report a phishing email?,email
+How do I schedule an email to be sent later?,email
+Why won't my laptop turn on?,device
+How do I connect an external monitor?,device
+Why is my device overheating?,device
+How do I reset my device to factory settings?,device
+Why does my device keep restarting?,device
+How do I update the operating system?,device
+Why is my camera or microphone not working?,device
+How do I enable Bluetooth on my device?,device
+My touchpad or keyboard isn’t responding — what can I do?,device
+Can I use my phone as a hotspot for my laptop?,device
+Why can’t I load any websites?,internet
+My browser says “No Internet” — what should I do?,internet
+How do I reset my internet connection?,internet
+Is there an outage in my area?,internet
+Why do some websites load slowly or not at all?,internet
+Why is my VPN blocking certain websites?,internet
+How do I clear my browser’s cache and cookies?,internet
+How do I test my internet speed?,internet
+Why am I getting DNS errors?,internet
+How can I tell if my internet is being throttled?,internet
+How do I switch between Wi-Fi and Ethernet?,internet
+Can I use a proxy server to browse?,internet
+How do I enable JavaScript in my browser?,internet
+Why does my browser keep redirecting to unknown pages?,internet
+How do I manage browser extensions?,internet
+Why is my printer not printing?,hardware
+My mouse and keyboard stopped working — why?,hardware
+How do I install new hardware drivers?,hardware
+Why isn’t my USB drive recognized?,hardware
+My monitor is flickering — what’s the issue?,hardware
+How do I upgrade my RAM or hard drive?,hardware
+Why do I hear strange noises from my computer?,hardware
+How do I check if my hard drive is failing?,hardware
+My external hard drive is not showing up — how do I fix this?,hardware
+How do I calibrate my monitor?,hardware
+What tools can I use to test hardware health?,hardware
+How do I reset the BIOS settings?,hardware
+Why won’t my computer recognize a new GPU?,hardware
+How can I fix overheating issues with my PC?,hardware
+What should I do if my hardware warranty is expired?,hardware
