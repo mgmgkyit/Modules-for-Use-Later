@@ -1,0 +1,108 @@
+timestamp,user_input,response,confidence,escalated
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+2025-04-18 15:59:22.526520,How is the weather,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.40)",0.40,Rejected
+2025-04-18 15:59:33.271271,what is your name,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.21)",0.21,Rejected
+2025-04-18 15:59:44.666843,How to shut down my computer,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.41)",0.41,Rejected
+2025-04-18 15:59:45.963787,How to shut down my computer,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.41)",0.41,Rejected
+2025-04-18 15:59:53.443420,I cannot open browser,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.47)",0.47,Rejected
+2025-04-18 16:00:01.653437,how to edit my file,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.17)",0.17,Rejected
+2025-04-18 16:04:14.598566,How to edit a text file,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.23)",0.23,Rejected
+2025-04-18 16:08:17.329432,I cannot connect to the wifi,I have to connect to the wifi first,0.41,Accepted
+2025-04-18 16:08:30.966139,I cannot wake up early,I can't remember if I can or not,0.25,Accepted
+2025-04-18 16:10:01.878087,I cannot login to my email server,I have to go to the server and type in my password,0.45,Accepted
+2025-04-18 16:10:10.318303,I cannot print,"I can't print either
+###",0.30,Accepted
+2025-04-18 16:10:19.973083,How to shutdown my linux,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.17)",0.17,Rejected
+2025-04-18 16:10:28.513801,How to shutdown my linux system,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.29)",0.29,Rejected
+2025-04-18 16:10:41.812855,I cannot open my email,I can't open my email,0.59,Accepted
+2025-04-18 16:10:54.744952,How to install microsoft office,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.27)",0.27,Rejected
+2025-04-18 16:11:01.602499,How to install python,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.26)",0.26,Rejected
+2025-04-18 16:11:44.687646,reset my password,you can reset your password by going to the login page and clicking on the reset button,0.79,Accepted
+2025-04-18 16:36:12.113787,reset my ,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.28)",0.28,Rejected
+2025-04-18 16:36:20.625671,reset my password,you can reset your password by going to the login page and clicking on the reset button,0.79,Accepted
+2025-04-18 16:37:46.102666,reset my password,you can reset your password by going to the login page and clicking on the reset button,0.79,Accepted
+2025-04-18 16:37:50.619580,reset my pass,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.28)",0.28,Rejected
+2025-04-18 16:37:57.989748,reset my password,you can reset your password by going to the login page and clicking on the reset button,0.79,Accepted
+2025-04-18 16:39:30.088860,reset my password,you can reset your password by going to the login page and clicking on the reset button,0.79,Accepted
+2025-04-18 16:39:33.120089,reset my pas,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.28)",0.28,Rejected
+2025-04-18 16:39:40.156107,reset my password,you can reset your password by going to the login page and clicking on the reset button,0.79,Accepted
+2025-04-18 16:39:46.975778,how are you,"i'm fine
+###",0.31,Accepted
+2025-04-18 16:39:54.220508,what is today,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.21)",0.21,Rejected
+2025-04-18 16:40:06.087976,How to update my os,sudo apt-get update,0.33,Accepted
+2025-04-18 16:59:51.610446,Good morning,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.17)",0.17,Rejected
+2025-04-18 17:00:01.842181,How can i upgrade my OS version,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.21)",0.21,Rejected
+2025-04-18 17:00:38.693608,How can I upgrade my software,You can't.,0.31,Accepted
+2025-04-18 17:00:50.987254,How can I upgrade my applcation,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.26)",0.26,Rejected
+2025-04-18 17:01:02.691748,I cannot connect to my network,I have no idea what you are talking about,0.79,Accepted
+2025-04-18 17:01:14.734532,I cannot open my email,I can't open my email,0.59,Accepted
+2025-04-18 17:01:26.324984,My computer does not power on,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.30)",0.30,Rejected
+2025-04-18 17:01:33.441616,My computer does not turn on,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.27)",0.27,Rejected
+2025-04-18 17:01:46.026077,Please reset my password,"I don't know what you mean by resetting your password.
+
+⚠️ Case escalated due to unclear answer.",0.68,Escalated
+2025-04-18 17:02:02.972442,I forget my email address,I forgot my email address,0.41,Accepted
+2025-04-18 17:08:52.620891,how to reset my password,you can reset your password by going to the following link: http://www.google.com/accounts/ServiceLogin?service=account,0.69,Accepted
+2025-04-18 17:09:08.942290,how to reset my root password,you can use sudo passwd to reset your root password,0.69,Accepted
+2025-04-18 17:13:08.559519,"how to reset root password
+",i think you can do it with sudo passwd,0.66,Accepted
+2025-04-18 17:13:24.135905,"how to reset email user password
+",you can reset the password by going to your email account and click on the link that says reset password,0.39,Accepted
+2025-04-18 17:17:11.164798,what is IMDB,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.21)",0.21,Rejected
+2025-04-18 17:17:26.052626,how can i reset su password,you can use sudo passwd to reset your password.,0.69,Accepted
+2025-04-18 17:17:38.276312,how to install KDE GUI,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.26)",0.26,Rejected
+2025-04-18 17:17:47.353594,how to install printer driver,you can use the command line to install the printer driver.,0.37,Accepted
+2025-04-18 17:20:48.935029,how to reset windows password,you can use the windows key + r,0.66,Accepted
+2025-04-18 17:21:15.962176,how to reteset windows password,you can use the windows password manager to reset the password,0.83,Accepted
+2025-04-18 17:21:29.631159,how to print,you can use the terminal to do it,0.35,Accepted
+2025-04-18 17:25:26.213231,how to use sudo,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.20)",0.20,Rejected
+2025-04-18 17:25:39.606653,how to reset su password,you can use sudo passwd to reset the password.,0.66,Accepted
+2025-04-18 17:28:51.592319,How to install the printer driver,http://www.linuxprinting.org/,0.34,Accepted
+2025-04-18 17:29:03.636405,How to clear paper jam,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.24)",0.24,Rejected
+2025-04-18 17:29:10.119578,How to clear paper jam in printer,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.24)",0.24,Rejected
+2025-04-18 17:29:17.172812,How to add paper in printer,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.29)",0.29,Rejected
+2025-04-18 17:29:26.769607,how to reset windows password,you can use the windows key + r,0.66,Accepted
+2025-04-18 17:29:34.893994,how to shut down windows,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.23)",0.23,Rejected
+2025-04-18 17:29:46.270500,how to reset my computer,i dont know how to reset my computer,0.43,Accepted
+2025-04-18 17:33:33.044720,how to reset password,you can reset password by using the command line,0.66,Accepted
+2025-04-18 17:33:43.102983,how to run command line,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.23)",0.23,Rejected
+2025-04-18 17:33:49.398986,how to edit text files,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.23)",0.23,Rejected
+2025-04-18 17:33:53.973176,"how to edit text file
+","❌ Sorry, I can only assist with IT-related queries. (confidence: 0.23)",0.23,Rejected
+2025-04-18 17:34:11.949129,I want to edit text files. what app to use,"I don't know. I'm not sure what you mean by editing text files.
+
+⚠️ Case escalated due to unclear answer.",0.54,Escalated
+2025-04-18 17:34:25.248252,I want to edit text files. what command to use?,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.19)",0.19,Rejected
+2025-04-18 17:34:39.049025,i cannot connect to internet,i have no idea what you are talking about,0.49,Accepted
+2025-04-18 17:38:05.265731,how to open gmail account,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.22)",0.22,Rejected
+2025-04-18 17:38:14.446618,how to install python,"❌ Sorry, I can only assist with IT-related queries. (confidence: 0.26)",0.26,Rejected
+2025-04-18 17:38:24.290599,how to reset password,you can reset password by using the command line,0.66,Accepted
+2025-04-18 17:38:36.558402,how to connect to the printer,you need to install the printer driver for it,0.43,Accepted
+2025-04-18 17:41:04.858549,what is vi program,"Sorry, I can only assist with IT-related queries. (confidence: 0.21)",0.21,Rejected
+2025-04-18 17:41:26.514584,please reset my email password,you can reset your email password by going to your email settings and clicking on the email tab,0.45,Accepted
+2025-04-18 17:41:26.540637,please reset my email password,you can reset your email password by going to your email settings and clicking on the email tab,0.45,Accepted
+2025-04-18 17:41:38.530177,how to format my printouts,"Sorry, I can only assist with IT-related queries. (confidence: 0.17)",0.17,Rejected
+2025-04-18 17:41:53.462574,how to format my text in bold,"Sorry, I can only assist with IT-related queries. (confidence: 0.29)",0.29,Rejected
+2025-04-18 17:42:07.610513,I cannot connect to my email,I have no idea what you are talking about,0.59,Accepted

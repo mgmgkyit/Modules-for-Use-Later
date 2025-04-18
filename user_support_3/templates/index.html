@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LightWeight IT Helpdesk Assistant</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-bottom: 60px;
+        }
+
+        #page-content {
+            max-width: 600px;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        textarea {
+            width: 100%;
+            height: 120px;
+            padding: 1rem;
+            border-radius: 6px;
+            border: none;
+            resize: vertical;
+            font-size: 1rem;
+        }
+
+        button {
+            padding: 0.7rem 1.5rem;
+            margin-top: 1rem;
+            background: gold;
+            color: #111;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+
+        .response {
+            margin-top: 2rem;
+            background: #333;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+
+        .loading-container {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .loading-bar {
+            width: 100%;
+            max-width: 400px;
+            background-color: #444;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px auto;
+            height: 10px;
+        }
+
+        .loading-bar-fill {
+            height: 100%;
+            width: 0;
+            background-color: gold;
+            animation: loadingAnim 2s infinite;
+        }
+
+        @keyframes loadingAnim {
+            0% { width: 0%; }
+            50% { width: 100%; }
+            100% { width: 0%; }
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+<div id="page-content">
+    <h1>LightWeight IT Helpdesk Assistant</h1>
+
+    <form method="post">
+        <textarea name="user_input" placeholder="Describe your IT issue here..." required>{{ request.form.get('user_input', '') }}</textarea>
+        <button type="submit">Ask</button>
+    </form>
+
+    {% if response %}
+    <div class="response">
+        <strong>Response:</strong>
+        <pre style="color:#0f0; white-space: pre-wrap;">{{ response }}</pre>
+    </div>
+    {% endif %}
+
+    <!-- Loading Animation Under Content -->
+    <div class="loading-container" id="loadingBox" style="display: none;">
+        <p>I am getting answers...</p>
+        <div class="loading-bar">
+            <div class="loading-bar-fill"></div>
+        </div>
+    </div>
+
+    <!-- exit bottom -->
+    <button type="button" onclick="handleExit()" style="margin-top: 2rem; background-color: red; color: white;">
+        Exit Program
+    </button>
+</div>
+
+<footer>
+    <span id="footer-date"></span> &nbsp; | &nbsp; © 2025 LightWeight IT Helpdesk Assistant by archx64-ait
+</footer>
+
+<script>
+    // Auto-update date in footer
+    const now = new Date();
+    const dateStr = now.toLocaleDateString(undefined, {
+        year: 'numeric', month: 'long', day: 'numeric'
+    });
+    document.getElementById("footer-date").innerText = dateStr;
+
+    // Handle form submission
+    document.querySelector("form").addEventListener("submit", function () {
+        document.getElementById("loadingBox").style.display = "block";
+
+        // Clear previous response if present
+        const responseBox = document.querySelector(".response");
+        if (responseBox) {
+            responseBox.innerHTML = "";
+        }
+    });
+
+    function handleExit() {
+        const choice = confirm("Do you want to download this session as a PDF before exiting?");
+        fetch("/exit", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ save: choice })
+        })
+        .then(res => res.json())
+        .then(data => {
+            if (data.redirect) {
+                // Show toast
+                showToast("Downloading session PDF...");
+
+                // 🔁 DIRECT redirect to download URL
+                window.location.href = data.redirect;
+
+                // Shutdown 3 seconds later
+                setTimeout(() => {
+                    fetch("/shutdown", { method: "POST" });
+                    showToast("Server shutting down...");
+                    setTimeout(() => {
+                        window.open('', '_self', '');
+                        window.close();
+                    }, 2000);
+                }, 4000);
+            } else {
+                showToast("Exiting...");
+                setTimeout(() => {
+                    fetch("/shutdown", { method: "POST" });
+                    window.open('', '_self', '');
+                    window.close();
+                }, 4000);
+            }
+        });
+    }
+</script>
+
+<div id="toast" style="
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 100px;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    transition: opacity 0.5s ease-in-out;">
+    Toast
+</div>
+
+<script>
+function showToast(message) {
+    const toast = document.getElementById("toast");
+    toast.textContent = message;
+    toast.style.visibility = "visible";
+    toast.style.opacity = "1";
+
+    setTimeout(() => {
+        toast.style.opacity = "0";
+        toast.style.visibility = "hidden";
+    }, 3000);
+}
+</script>
+
+</body>
+</html>
